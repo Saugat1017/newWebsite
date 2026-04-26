@@ -377,6 +377,24 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .callnow__content { position: relative; z-index: 1; max-width: 640px; margin: 0 auto; }
 .callnow__content h2 { font-family: var(--serif); font-size: clamp(2rem, 5vw, 3.2rem); color: var(--white); margin: 10px 0 16px; line-height: 1.2; }
 .callnow__content > p { color: rgba(255,255,255,.78); font-size: 1.05rem; margin-bottom: 36px; }
+.callnow__email {
+  margin-top: 22px;
+  color: rgba(255,255,255,.7);
+  font-size: .92rem;
+}
+.callnow__email a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--white);
+  font-weight: 600;
+  margin-left: 6px;
+  border-bottom: 1px solid rgba(255,255,255,.35);
+  padding-bottom: 1px;
+  transition: color var(--ease), border-color var(--ease);
+}
+.callnow__email a:hover { color: var(--teal); border-color: var(--teal); }
+.callnow__email svg { width: 15px; height: 15px; }
 .callnow__pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 28px; }
 .callnow__pills span { background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.18); color: rgba(255,255,255,.8); font-size: .8rem; font-weight: 600; padding: 6px 16px; border-radius: 50px; }
 
@@ -390,6 +408,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .footer__brand p { font-size: .85rem; line-height: 1.7; margin-bottom: 16px; }
 .footer__phone { display: inline-block; color: var(--teal); font-weight: 700; font-size: 1rem; }
 .footer__phone:hover { color: #7ee8f4; }
+.footer__email { display: block; margin-top: 8px; color: rgba(255,255,255,.7); font-size: .88rem; transition: color var(--ease); word-break: break-all; }
+.footer__email:hover { color: var(--teal); }
 .footer__col h4 { color: var(--white); font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 14px; }
 .footer__col a, .footer__col span { display: block; font-size: .85rem; margin-bottom: 8px; transition: color var(--ease); }
 .footer__col a:hover { color: var(--teal); }
